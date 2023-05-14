@@ -1,3 +1,3 @@
-# Django - rest api
+# Django - Rest API
 
-# WS -  Exercise 7
+# WS -  Exercise 6 - 7
