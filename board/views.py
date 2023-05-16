@@ -7,11 +7,11 @@ from .serializers import BoardSerializer, Board
 
 # Create your views here.
 @api_view(['GET'])
-def board_details(request,**shaun):
+def board_details(request,**mikko):
     # board = Board.objects.all() 
     board = None
-    if 'pk' in shaun:
-        board = BoardSerializer(Board.objects.get(pk=shaun['pk']), many=False).data
+    if 'pk' in mikko:
+        board = BoardSerializer(Board.objects.get(pk=mikko['pk']), many=False).data
     else:
         board = BoardSerializer(Board.objects.all(), many=True).data
     
